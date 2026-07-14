@@ -4,3 +4,5 @@ COPY setup.sh /setup.sh
 RUN chmod +x /setup.sh
 ENTRYPOINT ["/setup.sh"]
 
+FROM dev as tests
+FROM dev as prod
